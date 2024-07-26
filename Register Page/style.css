@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+}
+.con{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap{
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(203, 203, 203, 0.7);
+
+  position: relative;
+  display: flex;
+
+  overflow: hidden;
+}
+.left,
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  width: 330px;
+  padding: 20px;
+  background-color: #fff;
+}
+.left-con{
+  display: inline-block;
+  width: 100%;
+}
+.log-reg-con{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.log-reg-con > a{
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(52, 145, 255);
+  padding: 0 15px 6px 15px;
+  transition: .3s linear;
+  position: relative;
+}
+.form-active{
+  border-bottom: solid 3px rgb(52, 145, 255);
+}
+.log-reg-con > a:hover{
+  border-bottom: solid 3px rgb(52, 145, 255);
+}
+.form-field{
+  width: 100%;
+  height: 38px;
+  margin: 10px 0;
+}
+.form-field > input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: solid 1px rgb(215, 215, 215);
+  border-radius: 8px;
+  padding: 0 12px;
+}
+.form-field > input:focus{
+  border: solid 2px rgb(52, 145, 255);
+  color: rgb(52, 145, 255);
+}
+.rem-pass-con{
+  display: flex;
+  margin: 8px 0;
+}
+.rem-pass-con > input{display: none;}
+.rem-pass-con > input:checked ~ label > .rp-check{
+  background-color: rgb(52, 145, 255);
+  border: none;
+}
+.rem-pass-con > input:checked ~ label > .rp-check > i{
+  display: contents;
+}
+.rem-pass-con > label {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.rem-pass-con > label > span{
+  font-size: 13px;
+  color: rgb(136, 136, 136);
+}
+.rp-check{
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid rgb(215, 215, 215);
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  margin-right: 6px;
+}
+
+.rp-check > i{
+  font-size: 15px;
+  display: none;
+  color: #fff;
+}
+.log-btn-field{
+  width: 290px;
+  height: 40px;
+  display: flex;
+  display: inline-table;
+}
+.log-btn-field > a{
+  text-decoration: none;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+
+  outline: none;
+  border: none;
+
+  background-color: rgb(52, 145, 255);
+  border-radius: 5px;
+
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+.fp-con{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+.fp{
+  text-decoration: none;
+  font-size: 13px;
+  color: #222;
+}
+.right{
+  width: 300px;
+  background-color: rgb(52, 145, 255);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-con{
+  display: inline-block;
+  text-align: center;
+}
+.right-con > h2{
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 20px;
+}
+.social-link {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.social-link > a{
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  transition: .3s linear;
+  font-size: 35px;
+  color: #fff;
+}
+.social-link > a:hover{
+  border-bottom: 3px solid #fff;
+}
